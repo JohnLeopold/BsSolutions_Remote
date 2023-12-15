@@ -1,0 +1,9 @@
+create table Kunde (UUID int PRIMARY KEY, Firstname varchar(50), Lastname varchar(50));
+insert into Kunde values (1, "Peter", "Schwarz");
+insert into Kunde values (2, "Hans", "Rot");
+insert into Kunde values (3, "Jochen", "Gelb");
+
+create table Ablesung (UUID int FOREIGN KEY, DateOfReading DATE, KindOfMeter varchar(50), Metercount double, MeterId varchar(50), Substitute boolean);
+insert into Ablesung values (1, "2023-10-19", "placeholder", 23.45, "1", True);
+insert into Ablesung values (2, "2023-10-20", "placeholder", 19.22, "2", False);
+insert into Ablesung values (3, "2023-10-21", "placeholder", 12.87, "3", True);
